@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.appear-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.appear-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.top-35 {
+    margin-top: 45% !important;
+}
+
+.bg-img {
+    background-image: url("imgs/interior.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
